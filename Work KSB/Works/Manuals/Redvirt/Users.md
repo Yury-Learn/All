@@ -1,0 +1,2 @@
+ - root / Novgorod53_root
+ - 1cgisno / Novgorod53_1c

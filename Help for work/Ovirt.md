@@ -1,0 +1,1 @@
+sudo ovirt-aaa-jdbc-tool user --help
