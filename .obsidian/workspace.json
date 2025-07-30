@@ -81,56 +81,20 @@
             "id": "30822c9bbccfa07a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Help for work/Tmux.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Tmux"
-            }
-          },
-          {
-            "id": "36614f2e8e229561",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Simbirsk.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Simbirsk"
+              "title": "New tab"
             }
           },
           {
             "id": "8342313fa165277e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Внедрение системы резервного копирования 'Кибер Бэкап' для виртуальной инфраструктуры.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Внедрение системы резервного копирования 'Кибер Бэкап' для виртуальной инфраструктуры"
-            }
-          },
-          {
-            "id": "fc1298f53053cc34",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Manuals/Prometheus/Prometheus.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Prometheus"
+              "title": "New tab"
             }
           },
           {
@@ -145,20 +109,6 @@
               },
               "icon": "lucide-file",
               "title": "Сброс пароля через IPMITools"
-            }
-          },
-          {
-            "id": "8b4b57e4946012f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Сервера для аттестации RedVirtualization.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Сервера для аттестации RedVirtualization"
             }
           },
           {
@@ -195,44 +145,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deploy Red Virt.md",
+                "file": "Simbirsk.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deploy Red Virt"
+              "title": "Simbirsk"
             }
           },
           {
-            "id": "2fb8bc5b94e59ec8",
+            "id": "0c3f8626f304903f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ping-Pong.md",
+                "file": "AI Agent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ping-Pong"
-            }
-          },
-          {
-            "id": "cbf9c3e2dc1683ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git Gud.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Git Gud"
+              "title": "AI Agent"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -383,55 +319,55 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "36614f2e8e229561",
+  "active": "0c3f8626f304903f",
   "lastOpenFiles": [
-    "Learn/Python/Dummers/3/3.1.py",
-    "Learn/Python/Dummers/3/3.4.py",
-    "Learn/Python/Dummers/3/3.5.py",
-    "Learn/Python/Dummers/3/3.3.py",
-    "Learn/Python/Dummers/3",
-    "Learn/Python/Dummers",
-    "Learn/Python",
-    "Learn",
-    "Git Gud.md",
-    "Ping-Pong.md",
+    "AI Agent.md",
     "Simbirsk.md",
-    "Сервера для аттестации RedVirtualization.md",
-    "Deploy Red Virt.md",
-    "Help for work/Tmux.md",
-    "Восстановление root.md",
-    "Manuals/Redvirt/Users.md",
-    "Настройка и подключение NFS-домена в РЕД Виртуализации.md",
-    "Настройка firewalld (методичка).md",
-    "Manuals/Redvirt/First Install.md",
-    "LIveCD увеличение и уменьшение размера.md",
-    "Сброс пароля через IPMITools.md",
-    "Prompt.md",
-    "Manuals/Prometheus/Prometheus.md",
-    "Внедрение системы резервного копирования 'Кибер Бэкап' для виртуальной инфраструктуры.md",
-    "Manuals/Redvirt/Version.md",
-    "Manuals/Redvirt/Servers.md",
-    "Manuals/Redvirt/Redvirt.md",
-    "Manuals/Redvirt/nmcli metric.md",
-    "Manuals/Redvirt/Network.md",
-    "Manuals/Redvirt/netsh.md",
-    "Manuals/Redvirt/Install VM RED Virt.md",
-    "Диспетчер задач сверху.md",
-    "консоль SPICE Troubleshooting.md",
-    "Руководство_администратора_Baum_storage_AI_OEM_7_2_v5_7_2_0.pdf",
-    "Untitled.canvas",
-    "Work KSB/Works/Manuals/Redvirt/Basic RVirt/Advanced Virt/Инструкция_по_созданию_и_замене_внутренних_сертификатов_РЕД_Виртуализация_в_режиме_Standalone(от_22.12.2023).pdf",
-    "Work KSB/Works/Manuals/Redvirt/Basic RVirt/Advanced Virt/Инструкция_по_созданию_и_замене_внутренних_сертификатов_РЕД_Виртуализация_Hosted_Engine.pdf",
-    "Work KSB/Data/Pasted image 20240404150444.png",
-    "Work KSB/Data/Pasted image 20240404132717.png",
-    "Data/Pasted image 20240404150444.png",
-    "Data/Pasted image 20240404132717.png",
+    "Docker stop.md",
+    "Work KSB/Learn/Learn Linux/Archive.md",
+    "Work KSB/Learn/Learn Linux/Learn AltLinux/LPIC-1 101-500.md",
+    "Work KSB/Learn/Learn Linux/Learn AltLinux/4.1 Disk RAID.md",
+    "Work KSB/Learn/Learn Linux/Learn AltLinux/GRUB 2.1.md",
+    "Work KSB/Learn/Learn Linux/Learn AltLinux/SystemD 2.2.md",
+    "Work KSB/Learn/Learn Linux/Learn AltLinux/1.3.2 Day Процессы.md",
+    "Work KSB/Learn/Learn Linux/Learn AltLinux/1.3 Окружение.md",
+    "Work KSB/Learn/Learn Linux/Learn AltLinux/1.5 Day Scripts.md",
+    "Work KSB/Learn/Learn Linux/Learn AltLinux/1.1 Users & Groups.md",
+    "Work KSB/Learn/Learn Linux/Learn AltLinux/1.4 Day Поиск и Сортировака.md",
+    "Work KSB/Learn/Learn Linux/Learn AltLinux/Untitled.md",
+    "Work KSB/Learn/Learn Linux/KodeKloud/Замена слова в тексте.md",
+    "Work KSB/Learn/Learn Linux/KodeKloud/Crontab Доступ.md",
+    "Work KSB/Learn/Learn Linux/KodeKloud/Доступ к crontab.md",
+    "Work KSB/Learn/Learn Linux/KodeKloud/User non-interactive shell.md",
+    "Work KSB/Learn/Learn Linux/KodeKloud/Archive.md",
+    "Work KSB/Learn/Learn Linux/Find & Copy.md",
+    "Work KSB/Learn/Learn Linux/10 commands Linux.md",
+    "Work KSB/Learn/Learn Linux/NetworkManager.md",
+    "Work KSB/Learn/Learn Python/Ariphmetic.md",
+    "Work KSB/Learn/Git/Git commands.md",
+    "Work KSB/Learn/Git/Miui без рекламы.md",
+    "Default Route.md",
+    "Data/Pasted image 20241107082735.png",
+    "Manuals/oVirt/Часть 2 Замена сертификата веб-сервера oVirt Engine.pdf",
+    "Manuals/oVirt/Часть 12 Резервное копирование виртуальных машин.pdf",
+    "Manuals/oVirt/Часть 3 Базовые операции в oVirt.pdf",
+    "Manuals/oVirt/Часть 10 Настройка Single sign-on SSO на базе Kerberos для упрощен.pdf",
+    "Manuals/oVirt/Часть 11 Резервное копирование oVirt Hosted Engine.pdf",
+    "Manuals/oVirt/Часть 4 Fencing как средство повышения доступности хостов и виртуа.pdf",
+    "Manuals/oVirt/Часть 1 Создание кластера виртуализации в конфигурации Hosted Engi.pdf",
+    "Data/Pasted image 20240527154023.png",
+    "Help for work/RuPost Доступ к календарю пользователя в Outlook.pdf",
+    "Help for work/Debian Базовая настройка сервера Debian после установки.pdf",
+    "Help for work/Debian Как скачать и установить Debian 10 Buster.pdf",
     "Pasted image 20240822102504.png",
     "Pasted image 20240822102439.png",
-    "Data/Pasted image 20241107082735.png",
-    "All/Work KSB/Data/Pasted image 20240404132717.png",
-    "All/Work KSB/Data/Pasted image 20240404150444.png",
-    "All/Data/Pasted image 20240527154023.png",
+    "Data/Pasted image 20240521131707.png",
+    "Data/Pasted image 20240521131451.png",
+    "Data/Pasted image 20240521131406.png",
+    "Data/Pasted image 20240521111340.png",
+    "Data/Pasted image 20240404150444.png",
+    "Data/Pasted image 20240404132717.png",
+    "Untitled.canvas",
     "WorkText/Untitled.canvas"
   ]
 }
