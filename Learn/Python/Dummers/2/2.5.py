@@ -1,7 +1,0 @@
-name = input('How are you? What is your name?> ')
-print('Nice to meet you,' + name + '!')
-answer = input('What are you doing there?> ')
-print('It`s very important ' + answer + '!')
-pet = input('What is your favorite pet?> ')
-color = input('What is your favorite color?> ')
-print('Your fovorite pet is ' + color + ' ' + pet + '!')
