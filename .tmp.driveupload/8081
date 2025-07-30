@@ -1,6 +1,0 @@
-0000000000000000000000000000000000000000 5bf7c9421311f6a34a18dcf89210a8a76bafb912 Alexander Shvets <alex@githowto.com> 1701170955 -0600	branch: Created from HEAD
-5bf7c9421311f6a34a18dcf89210a8a76bafb912 43fe7f3f3451fcccb9e67c11bf3d1f55193c3764 Alexander Shvets <alex@githowto.com> 1701170955 -0600	commit: Added css stylesheet
-43fe7f3f3451fcccb9e67c11bf3d1f55193c3764 1d631aa6f7b6883236148debd93f89ecf2ee438b Alexander Shvets <alex@githowto.com> 1701170955 -0600	commit: Included stylesheet into hello.html
-1d631aa6f7b6883236148debd93f89ecf2ee438b f3a69eeb5f9c293dd050f9515606d634fb8798f0 Alexander Shvets <alex@githowto.com> 1701170955 -0600	commit: Renamed hello.html; moved style.css
-f3a69eeb5f9c293dd050f9515606d634fb8798f0 12dc1879b161faaef821ced098711c909e1ffe61 Alexander Shvets <alex@githowto.com> 1701170955 -0600	commit: Added README
-12dc1879b161faaef821ced098711c909e1ffe61 bbf0df3a5460d596208a2280862391d33ab0cd75 Alexander Shvets <alex@githowto.com> 1701170955 -0600	commit: Added meta title
