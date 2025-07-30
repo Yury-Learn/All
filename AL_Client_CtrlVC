@@ -1,0 +1,71 @@
+1 часть)
+
+1.1 hostnamectl set-hostname repo.ks.test
+
+1.2
+echo -e "deb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.4/repository-base 1.7_x86-64 main non-free contrib" | sudo tee /etc/apt/sources.list
+echo -e "deb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.4/repository-extended 1.7_x86-64 main contrib non-free" | sudo tee -a /etc/apt/sources.list
+echo -e "deb https://dl.astralinux.ru/aldpro/stable/repository-main/ 2.1.0 main" | sudo tee /etc/apt/sources.list.d/aldpro.list
+echo -e "deb https://dl.astralinux.ru/aldpro/stable/repository-extended/ generic main" | sudo tee -a /etc/apt/sources.list.d/aldpro.list
+
+
+sudo -i
+cat <<EOL > /etc/apt/preferences.d/aldpro
+Package: *
+Pin: release n=generic
+Pin-Priority: 900
+EOL
+
+cat <<EOL > /etc/hosts
+127.0.0.1 localhost.localdomain localhost
+10.38.22.60	repo.ks.test	repo
+127.0.1.1 repo
+EOL
+
+#127.0.0.1 localhost.localdomain localhost
+#192.168.30.16 client1.domain.test client1
+#127.0.1.1 client1
+
+sudo systemctl stop NetworkManager
+sudo systemctl disable NetworkManager
+sudo systemctl mask NetworkManager
+
+cat <<EOL > /etc/network/interfaces
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.38.22.130
+netmask 255.255.255.0
+gateway 10.38.22.1
+dns-nameservers 77.88.8.8
+dns-search ks.test
+EOL
+
+reboot
+
+2 часть)
+sudo apt update && sudo apt install astra-update -y && sudo astra-update -A -r -T && sudo DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-client
+
+3 часть)
+cat <<EOL > /etc/resolv.conf
+search ks.test
+nameserver 10.38.22.129
+EOL
+sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c ks.test -u admin -p 123_Qwerty -d repo -i -f
+
+
+-с имя_домена
+
+-u логин_админа
+
+-p пароль_админа
+
+-d имя_машины_в_домене
