@@ -1,7 +1,0 @@
-input('What is your favorite meal?> ')
-input('What are your dream?> ')
-input('What are your hobby?> ')
-print('Mda..')
-print('I dsish to meetng you!')
-input('Do you come to me?> ')
-print('See you later!')
