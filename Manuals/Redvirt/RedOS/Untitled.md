@@ -1,1 +1,0 @@
-chown 36:36 path_to_OVA_file/ file.OVA

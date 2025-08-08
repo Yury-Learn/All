@@ -1,1 +1,0 @@
-php -i | grep php.ini 

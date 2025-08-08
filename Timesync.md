@@ -1,1 +1,0 @@
-#timesync #ntpd #ntp 
