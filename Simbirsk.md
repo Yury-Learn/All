@@ -21,7 +21,7 @@ sudo ip route add 213.180.204.183 via 172.16.100.5 dev eno1 && \
 sudo ip route add 82.148.20.159 via 172.16.100.5 dev eno1
 ```
 
-```
+```sh
 echo '' > /etc/cockpit/disallowed-users
 ```
 
@@ -63,3 +63,14 @@ acronisbackup / 8gO&GQB@da2f
 
 test-cb.local
 172.16.100.250
+
+
+
+```sh
+grep 'ENGINE_DB_PASSWORD' /etc/ovirt-engine/engine.conf.d/*.conf
+```
+
+
+```sh
+grep 'ENGINE_DB_USER' /etc/ovirt-engine/engine.conf.d/*.conf
+```
