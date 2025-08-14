@@ -1,2 +1,16 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+
+# Скрипты: явные переводы строк
+*.ps1 text eol=lf
+*.sh  text eol=lf
+*.bat text eol=crlf
+
+# Бинарные форматы (не пытаемся их сливать)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.7z  binary
+*.iso binary
