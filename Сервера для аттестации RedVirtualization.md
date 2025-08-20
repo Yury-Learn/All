@@ -5,9 +5,9 @@
 | hostname           | ip           | login     | root           | ip-IPMI     | login IPMI |
 | ------------------ | ------------ | --------- | -------------- | ----------- | ---------- |
 | att-rv1.ksb.local  | 10.38.22.156 | ksb / 123 | 7BskAdmin2025! | 10.38.27.16 | ADMIN /123 |
-| att-eng1.ksb.local | 10.38.22.157 | admin     | 7BskAdmin2025  |             |            |
+| att-eng1.ksb.local | 10.38.22.157 | admin     | 7BskAdmin2025! |             |            |
 | att-rv2.ksb.local  | 10.38.22.164 | ksb /123  | 7BskAdmin2025! | 10.38.27.32 |            |
-| att-eng2.ksb.local | 10.38.22.165 | admin     | 7BskAdmin2025  |             |            |
+| att-eng2.ksb.local | 10.38.22.165 | admin     | 7BskAdmin2025! |             |            |
 |                    |              |           |                |             |            |
 # 2. Установка
 
