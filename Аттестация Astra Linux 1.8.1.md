@@ -47,3 +47,5 @@ sudo tee /etc/network/interfaces.d/br26 >/dev/null <<'EOF' # Uplink без ад�
 
 [[XML for Att.xml]]
 
+- меняем имя диск путь_к_iso
+- настраиваем поле <graphics> 
