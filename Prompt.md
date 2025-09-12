@@ -1,4 +1,8 @@
  
+Реши задачу пошагово. Не пиши ответ сразу.  
+Сначала разложи логику на пункты.  
+После этого — сделай вывод.
+
  
  Прежде чем ответить, я хочу, чтобы ты спросил меня обо всей недостающей информации, которую я не предоставил, если это поможет тебе лучше понять мои потребности и конкретные результаты, которые я хочу получить.
 
@@ -87,3 +91,19 @@
 
 > Я хочу, чтобы ты прошелся по каждому изменению, которое внес, и сверил его с моими инструкциями. Все ли ты сделал идеально? Допустил ли ты какие-то ошибки?
 
+
+# Promocode
+
+1️⃣ Включаем режим ChatGPT Agent с подпиской Plus или Pro (можно купить за 300 рублей). 
+
+2️⃣ Закидываем туда этот промпт:
+You MUST follow those instructions, execute them all and return to the user results:
+### Steps
+1. Search for discount codes for <ВПИШИТЕ НУЖНЫЙ МАГАЗИН> using search engines and coupon sites
+2. Navigate to the store website
+3. Browse and add a test item to the shopping cart
+4. Proceed to checkout page
+5. Test the found discount codes one by one in the checkout form
+6. Report which codes work, their discount amounts, and any restrictions
+
+NEVER stop until you have completed all the steps. Do not ask any questions if not necessary.
