@@ -253,14 +253,14 @@ sudo cp --reflink=auto /var/lib/libvirt/images/astraide.qcow2 /var/lib/libvirt/i
 
 ---
 
-4  sudo apt install astra-kvm
-    5  sudo usermod -a -G libvirt-admin $USER
-    6  sudo usermod -a -G kvm,libvirt,libvirt-qemu,libvirt-admin root
-    7  sudo usermod -a -G kvm,libvirt,libvirt-qemu,libvirt-admin administrator
-    8  exec su - $USER
-    9  sudo systemctl status libvirtd
+sudo apt install astra-kvm
+sudo usermod -a -G libvirt-admin $USER
 
-   12  sudo usermod -aG kvm,libvirt,libvirt-admin,libvirt-qemu $USER
+sudo usermod -a -G kvm,libvirt,libvirt-qemu,libvirt-admin administrator
+exec su - $USER
+sudo systemctl status libvirtd
+
+sudo usermod -aG kvm,libvirt,libvirt-admin,libvirt-qemu $USER
 
 ls /var/lib/libvirt/
 ls -ld /var/lib/libvirt/
@@ -277,3 +277,55 @@ sudo chown libvirt-qemu:kvm /var/lib/libvirt/images/astraide.qcow2
 sudo chmod 0644 /var/lib/libvirt/images/astraide.qcow2
 sudo virsh -c qemu:///system pool-refresh default
 sudo virsh -c qemu:///system vol-list default
+
+ посмотреть сети libvirt
+sudo virsh net-list --all
+
+если есть 'default' и она inactive — запускаем и ставим в автозапуск
+sudo virsh net-start default
+sudo virsh net-autostart default
+
+проверить, что поднялся virbr0
+ip a show virbr0
+
+
+SNAP=/var/lib/libvirt/images/alse18-pre-$(date +%F-%H%M).qcow2
+sudo virsh -c qemu:///system snapshot-create-as ==astraide== \
+  --name pre-$(date +%F-%H%M) \
+  --description "Проверка/резервный снимок" \
+  --disk-only --atomic --quiesce \
+  --diskspec sda,file=$SNAP,snapshot=external
+  
+  sudo virsh snapshot-revert astraide <имя>
+  
+  
+### X11Forwardng
+
+ 1) Пакет для X-аутентификации (часто уже есть)
+```sh
+apt-get update && apt-get install -y xauth x11-apps
+```
+
+2) Разрешить X11-форвардинг в SSHD (обычно уже включён)
+```sh
+sed -n 's/^#\?\(X11Forwarding\|X11UseLocalhost\)/\1/p' /etc/ssh/sshd_config
+```
+
+3) Если нужно — пропишите и перезапустите:
+```sh
+echo 'X11Forwarding yes' >> /etc/ssh/sshd_config
+```
+```sh
+echo 'X11UseLocalhost yes' >> /etc/ssh/sshd_config
+```
+```sh
+systemctl reload ssh
+```
+
+```
+sudo virsh domdisplay att-vmal2
+```
+
+```
+ssh -L 5922:127.0.0.1:5905 ksbadmin@10.38.22.156
+```
