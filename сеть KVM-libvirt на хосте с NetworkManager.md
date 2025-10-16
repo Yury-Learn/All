@@ -1,4 +1,4 @@
-#nmtui #nmcli
+#nmtui #nmcli #kvm
 # README.md — сеть KVM/libvirt на хосте с NetworkManager (br0+br1, 5 подсетей /28)
 
 ## 1. Цель и схема

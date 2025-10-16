@@ -1,4 +1,4 @@
-#powershell 
+#powershell #oh-my-posh
 
 # Тело скрипта
 

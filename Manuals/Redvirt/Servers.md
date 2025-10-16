@@ -1,6 +1,7 @@
 ---
-tags: novgorod, redvirt, servers, network
+tags:
 ---
+#novgorod #redvirt
 # 1. Hosts - Узлы
 
 | №   | Имя         | ip base       | ip vm          | ipmi           | pass ipmi | iqname                              |
